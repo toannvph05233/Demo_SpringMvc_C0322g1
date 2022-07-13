@@ -13,6 +13,7 @@
     <title>Title</title>
 </head>
 <body>
+<button><a href="/create">Create Product</a></button>
 <table>
     <c:forEach var="p" items="${products}">
         <tr>
@@ -20,6 +21,7 @@
             <td>${p.name}</td>
             <td>${p.price}</td>
             <td><img src="${p.img}" width="300" height="250"></td>
+            <td><button><a href="/edit?id=${p.id}">Edit</a></button></td>
         </tr>
     </c:forEach>
 </table>
